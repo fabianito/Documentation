@@ -15,3 +15,7 @@ Generate client certificate based on our own CA certificate
 ```
 openssl x509 -req -in MyClient1.csr -CA MyRootCA.pem -CAkey MyRootCA.key -CAcreateserial -out MyClient1.pem -days 1024 -sha256
 ```
+Konviertieren eines pem zu einem pk12:
+```
+openssl pkcs12 -export -in Beispiel.crt -inkey Beispiel.key -out Zertname.p12
+```
