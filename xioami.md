@@ -2,7 +2,7 @@
 2. Telefon in den Fastboot Modus versetzten (Komplett ausschalten - wieder einschalten mit "Volume down + Powerbutton" bis das "Reparatur Männchen" zu sehen ist
 3. MIUI herunterladen (http://en.miui.com/a-234.html)
 4. fastboot devices (sollte ein Gerät anzeigen):
-5. 
+
 [root@localhost  fastboot devices
 
 4ea807e7d530	fastboot
