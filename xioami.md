@@ -3,9 +3,11 @@
 3. MIUI herunterladen (http://en.miui.com/a-234.html)
 4. fastboot devices (sollte ein Gerät anzeigen):
 
+```
 [root@localhost  fastboot devices
 
 4ea807e7d530	fastboot
+```
 
 5.  Dann in das Verzeichnis des Images wechsel
 6. ./fastboot-exept-data_storage.sh ausführen und beten 😃
