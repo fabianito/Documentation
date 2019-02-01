@@ -1,6 +1,6 @@
 ### Auf dem Apache Server:
 
-## apche conf:
+# apche conf:
 ```
 CustomLog "|/usr/bin/logger -t apache -p local6.info" combined
 ``` 
