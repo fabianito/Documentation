@@ -1,11 +1,14 @@
 ### Auf dem Apache Server:
 
-apche conf:
+## apche conf:
+```
 CustomLog "|/usr/bin/logger -t apache -p local6.info" combined
+``` 
 
-rsyslogd.conf:
+## rsyslogd.conf:
 
 Auskommentieren oder einfügen:
+
 ```
 $ActionQueueFileName fwdRule1 # unique name prefix for spool files
 $ActionQueueMaxDiskSpace 1g   # 1gb space limit (use as much as possible)
