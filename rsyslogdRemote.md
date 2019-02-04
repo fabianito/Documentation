@@ -44,7 +44,7 @@ local3.* @@10.19.60.91:514
 
 $template RemoteHost,"/var/log/remote/%HOSTNAME%/%$YEAR%/%$MONTH%-%$DAY%.log"
 
-if $hostname contains 'tortuga-en-01' then {
+if $hostname contains 'en-01' then {
 *.* -?RemoteHost
 }
 
