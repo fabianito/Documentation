@@ -42,6 +42,12 @@ local3.* @@10.19.60.91:514
 ```
 #### RULES ####
 
+$template RemoteHost,"/var/log/remote/%HOSTNAME%/%$YEAR%/%$MONTH%-%$DAY%.log"
+
+if $hostname contains 'tortuga-en-01' then {
+*.* -?RemoteHost
+}
+
 local6.*                        /var/log/httpd/httpd-access.log
 ```
 
