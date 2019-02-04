@@ -1,6 +1,6 @@
-### Client
-## rsyslogd
-/etc/rsyslog.d/apacheLexcom.conf
+## Client
+### rsyslogd
+#### /etc/rsyslog.d/apacheLexcom.conf
 ```
 $ModLoad imfile
 
@@ -30,15 +30,15 @@ $InputRunFileMonitor
 
 $InputFilePollInterval 2
 ```
-/etc/rsyslog.conf
+#### /etc/rsyslog.conf
 ```
 local3.* /var/log/apache-access.log
 local3.* @@10.19.60.91:514
 ```
 
-### Server
-## rsyslogd
-/etc/rsyslog.conf
+## Server
+### rsyslogd
+#### /etc/rsyslog.conf
 ```
 #### RULES ####
 
