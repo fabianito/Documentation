@@ -44,3 +44,18 @@ protokoll:
 on
 soc|pipe|..
 tcp|pipe
+
+
+### Tracing
+
+Um das Tracing zu aktivieren gibt es zwei Möglichkeiten:
+- per sql
+  - sysadmin Datenbank muss vorhanden sein, nur diese hat die Prozedur "task"
+  - execute....task...(sql traceing on)
+- per Datei
+  - In der Konfigurationsdatei "onconfig.<datenbankinstanzname>" gibt es ein Teil für das Tracing
+  - Der Vorschlag kann übernohmmen werden
+  
+## Zugriff
+- per *onstat -g his* kann auf die Traces zugegriffen werden
+
