@@ -51,10 +51,11 @@ tcp|pipe
 Um das Tracing zu aktivieren gibt es zwei Möglichkeiten:
 - per sql
   - sysadmin Datenbank muss vorhanden sein, nur diese hat die Prozedur "task"
-  - execute....task...(sql traceing on)
+  - *EXECUTE FUNCTION task("set sql tracing on", 1000, 1,"high","global"); *
 - per Datei
   - In der Konfigurationsdatei "onconfig.<datenbankinstanzname>" gibt es ein Teil für das Tracing
-  - Der Vorschlag kann übernohmmen werden
+  - Der Vorschlag kann übernohmmen werden:
+    - SQLTRACE level=high,ntraces=1000,size=2,mode=global
   
 #### Zugriff
 - per *onstat -g his* kann auf die Traces zugegriffen werden
