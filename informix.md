@@ -1,4 +1,4 @@
-Übersicht
+#### Übersicht
 
 Server
   Informix
@@ -6,30 +6,39 @@ Client
   dbaccess
   
   
-Befehle
-dbaccess <datenbank> file.sql
-echo 'select * from ...' | dbaccess <datenbank>
-onmode -kuy | stoppen
-oninit    | starten
-oninit -i | Datenbank neu initialisieren
-onstat -g his (trace log anzeigen)
+### Befehle
+
+- dbaccess <datenbank> file.sql
+- echo 'select * from ...' | dbaccess <datenbank>
+- onmode -kuy   | *Datenbank stoppen - ohne Nachfrage*
+- oninit        | *Daten starten*
+- oninit -i     | *Datenbank neu initialisieren*
+- onstat -g his | *trace log anzeigen*
+- dbschema -d <databank> | *show create" 
 
 
-Remote
+### Remote
  - Dazu muss die Remote Datenbank in der sqlhosts.??? eingetragen sein
  - Kein Neustart nach der Änderung der Datei notwendig
  - Der connect to kann entweder über ein file oder per echo übergeben werden
     - echo "connect to @<datenbank im sqlhosts file> user 'xxxx'" | dbaccess <datenbank>
- - Das Passwort geht nur über ein File - nicht per echo
-Dateien
+ - Das Passwort geht nur über ein File, nicht per echo
+
+
+
+### Dateien
+```
 /opt/Informix.../etc/onconfig.<datenbankinstanzname>
 /opt/Informix.../etc/sqlhosts.<datenbankinstanzname>
-Beispiel:
+``` 
 
+## Beispiel:
+```
 sqlhosts.<name>
 Datenbankname protokoll host port
 ol_informix1210 onsoctcp 127.0.0.1 1526
 ...
+``` 
 
 protokoll:
 on
