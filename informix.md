@@ -32,7 +32,7 @@ Client
 /opt/Informix.../etc/sqlhosts.<datenbankinstanzname>
 ``` 
 
-## Beispiel:
+#### Beispiel:
 ```
 sqlhosts.<name>
 Datenbankname protokoll host port
@@ -56,6 +56,6 @@ Um das Tracing zu aktivieren gibt es zwei Möglichkeiten:
   - In der Konfigurationsdatei "onconfig.<datenbankinstanzname>" gibt es ein Teil für das Tracing
   - Der Vorschlag kann übernohmmen werden
   
-## Zugriff
+#### Zugriff
 - per *onstat -g his* kann auf die Traces zugegriffen werden
 
