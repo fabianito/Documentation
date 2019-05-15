@@ -62,9 +62,9 @@ Um das Tracing zu aktivieren gibt es zwei Möglichkeiten:
   Vorgang laut IBM:
   
   - Instanz starten
-  - onmode -g +1 sql_dbg    # Debug einschalten
+  - onmode -p +1 sql_dbg    # Debug einschalten
   - Anwendung starten
-  - onmode -g -1 sql_dbg    # Debug ausschalten
+  - onmode -p -1 sql_dbg    # Debug ausschalten
   - sqliprim -o ausgabedatei.txt sqli.<process-id>   # In ein lesbares Format umwandeln
   
   Achtung: Es wird erst eine null-byte Datei angelegt und wenn der Process beendet ist wird die Datei aus dem buffer gefüllt.
