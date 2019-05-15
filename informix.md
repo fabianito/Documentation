@@ -46,6 +46,14 @@ soc|pipe|..
 tcp|pipe
 
 
+### Logging
+Das logging kann man per set für die Session einstellen oder per ondblog bzw. ontabe für die Datenbank allgemein
+```` 
+ontape -s -L 0 -U security
+````
+Bei mir hat nur ontape funktioniert - obwohl IBM schreibt das es auch nur ondblog verwendet.
+
+
 ### Tracing
 #### lokales Tracing
 Um das Tracing zu aktivieren gibt es zwei Möglichkeiten:
