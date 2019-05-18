@@ -48,6 +48,7 @@ tcp|pipe
 
 ### Logging
 Das logging kann man per set für die Session einstellen oder per ondblog bzw. ontabe für die Datenbank allgemein
+**Achtung: es darf keine offene Verbindung mehr vorhanden sein! Sonst kommt direkt die Meldung das es nicht geht**
 ```` 
 ontape -s -L 0 -U security
 ````
