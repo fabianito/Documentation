@@ -1,5 +1,20 @@
 ## Logstash
 
+#### Neuer grok filter mit update 
+```
+filter {
+
+ grok {
+        match => { "message" => "(?:%{SYSLOGTIMESTAMP:timestamp}|%{TIMESTAMP_ISO8601:timestamp8601}) %{WORD:host} %{SYSLOGPROG:prog}:%{SPACE}%{WORD:bla}%{SPACE}%{PROG:anwendung}%{SPACE}uid=%{NUMBER:userid}%{SPACE}auid=%{NUMBER:pid}%{SPACE}ses=%{NUMBER:ses}%{SPACE}msg=(?<msg>.*)grantors=(?<bla2>.*)%{SPACE}acct=\"%{WORD:benutzer}\"%{SPACE}exe=(?<programm>.*)%{SPACE}hostname=\?"  } 
+     }
+ mutate {
+  update => { "benutzer" => "Geheim" }
+ }
+
+
+}
+```
+
 ### Mapping mit Regex und Integer
 ```
 input {
