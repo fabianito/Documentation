@@ -1,8 +1,10 @@
 # Documentation
 
+```
 git add *
 git commit 
 git push
+```
 
 
 #### Password 
