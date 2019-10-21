@@ -2,6 +2,7 @@
 * https://www.eintrittfrei-muenchen.de
 * http://www.deutsches-museum.de/ausstellungen/naturwissenschaft/sternwarte/
 * https://www.gasteig.de/veranstaltungen/veranstaltungssuche.html
+* https://www.mvhs.de/programm/mensch-politik-gesellschaft
 
 
 #### Museen
